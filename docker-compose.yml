@@ -16,7 +16,7 @@ services:
     image: prima/filebeat
     volumes:
       - /tmp/docker/elk/log/nginx:/etc/logs/nginx # логи nginx
-      - ./filebeat/filebeat.yml:/filebeat.yml:ro
+      - ./filebeat/filebeat.yml:/filebeat.yml
       - ./filebeat/certs:/etc/pki/tls/certs
       - ./filebeat/certs:/etc/pki/tls/private
     networks:

@@ -14,5 +14,5 @@ output:
           certificate_authorities:
             - /etc/pki/tls/certs/logstash-beats.crt
         timeout: 15
-    file:
-        path: "/tmp/filebeat"
+    # file:
+    #     path: "/tmp/filebeat"
